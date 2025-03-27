@@ -17,4 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Karting/Scenes/WinScene.unity
     guid: d6801f2e59f75ee4b919cf5da4e48e3b
+  - enabled: 1
+    path: Assets/Karting/Scenes/Pistas.unity
+    guid: 858c0bbe58fb2984c880f1aa472bda6c
+  - enabled: 1
+    path: Assets/Karting/Scenes/SegundaPista.unity
+    guid: 58b1b2bf4e1bf6b469634f9b02563428
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
