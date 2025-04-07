@@ -14131,6 +14131,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190263957180019434, guid: f490fde3208c63e4e843e766af290a62,
         type: 3}
+      propertyPath: DriftControl
+      value: 17.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190263957180019434, guid: f490fde3208c63e4e843e766af290a62,
+        type: 3}
       propertyPath: baseStats.Acceleration
       value: 10
       objectReference: {fileID: 0}
