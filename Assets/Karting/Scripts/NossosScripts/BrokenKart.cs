@@ -1,3 +1,4 @@
+using System.Collections;
 using Codice.CM.Common;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ public class BrokenKart : MonoBehaviour
     void Start()
     {
         Broken = false;
-        
+       
     }
 
     // Update is called once per frame
@@ -22,8 +23,15 @@ public class BrokenKart : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Broken = true;
-            Destroy(gameObject);
+            transform.position = new Vector3(0,-7,0);
+            StartCoroutine(Volta());
         }
+    }
+        private IEnumerator Volta()
+    {
+        yield return new WaitForSeconds(3);
+        Broken = false;
+        
     }
 
 
