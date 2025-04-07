@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - CrashMode
+  - Player2
   layers:
   - Default
   - TransparentFX

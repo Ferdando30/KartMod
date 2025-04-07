@@ -8927,6 +8927,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: KartFernando
       objectReference: {fileID: 0}
+    - target: {fileID: 7200211560696021445, guid: 1d7d0655d3d55f34181926a5f7e7eb9e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
