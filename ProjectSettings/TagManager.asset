@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CrashMode
   - Player2
+  - Debuff
   layers:
   - Default
   - TransparentFX

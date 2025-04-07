@@ -7,6 +7,7 @@ public class Shrink : MonoBehaviour
     public bool P2;
     public GameObject Kart1;
     public GameObject Kart2;
+    public Shield ShieldScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +23,7 @@ public class Shrink : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && ShieldScript.P1Shielded == false)
         {
             Kart1 = collision.gameObject;
             collision.gameObject.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
@@ -30,7 +31,9 @@ public class Shrink : MonoBehaviour
             StartCoroutine(Big());
             transform.position = new Vector3(0, -10, 0);
         }
-        if (collision.gameObject.tag == "Player2")
+        else if (collision.gameObject.tag == "Player" && ShieldScript.P1Shielded == true)
+            transform.position = new Vector3(0, -10, 0);
+        if (collision.gameObject.tag == "Player2" && ShieldScript.P2Shielded == false)
         {
             Kart2 = collision.gameObject;
             collision.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
@@ -38,6 +41,8 @@ public class Shrink : MonoBehaviour
             StartCoroutine(Big());
             transform.position = new Vector3(0, -10, 0);
         }
+        else if (collision.gameObject.tag == "Player2" && ShieldScript.P2Shielded == true)
+            transform.position = new Vector3(0, -10, 0);
 
     }
     private IEnumerator Big()
