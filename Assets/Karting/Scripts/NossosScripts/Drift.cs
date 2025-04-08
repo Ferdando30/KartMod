@@ -40,7 +40,7 @@ public class Drift : MonoBehaviour
     }
     private IEnumerator GripCerto()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         if (P1 == true)
         {
             P1 = false;
